@@ -8,8 +8,10 @@ module "vpc" {
   source = "./vpc"
 }
         
-
-        
 module "rds-db" {
   source = "./rds"
+}
+        
+module "ec2_instance" {
+  source = "./ec2"
 }
