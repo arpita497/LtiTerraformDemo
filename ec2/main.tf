@@ -4,7 +4,7 @@ module "ec2_instance" {
 
   name = "ltiinstance"
 
-  ami                    = "ami-08f0bc76ca5236b20"
+  ami                    = "ami-0331cab4f961a4e3e"
   instance_type          = "t2.micro"
   key_name               = "sydney-keypair"
   monitoring             = true
