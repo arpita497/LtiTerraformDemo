@@ -1,5 +1,5 @@
 provider "aws" {
-        region = "ap-south-1"
+        region = "ap-southeast-2"
         access_key = "AKIAZOITTNXULYNR5PNZ"
         secret_key = "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"
 }
@@ -11,7 +11,7 @@ module "vpc" {
   name = "LTIvpc"
   cidr = "10.0.0.0/16"
 
-  azs             = ["ap-south-1", "ap-south-1"]
+  azs             = ["ap-southeast-2a", "ap-southeast-2b"]
   private_subnets = ["10.0.1.0/24", "10.0.2.0/24"]
   public_subnets  = ["10.0.101.0/24", "10.0.102.0/24"]
 
