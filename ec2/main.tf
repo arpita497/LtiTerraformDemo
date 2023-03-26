@@ -6,7 +6,7 @@ module "ec2_instance" {
 
   ami                    = "ami-08f0bc76ca5236b20"
   instance_type          = "t2.micro"
-  key_name               = "new-keypair"
+  key_name               = "sydney-keypair"
   monitoring             = true
   vpc_security_group_ids = ["sg-09d0c7268bedc251a"]
   subnet_id              = "subnet-0833359ae17b1d644"
